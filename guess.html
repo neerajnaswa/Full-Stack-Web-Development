@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+        html { 
+    font-family: sans-serif; 
+    } 
+      
+        body { 
+    width: 50%; 
+    max-width: 800px; 
+    min-width: 480px; 
+    margin: 0 auto; 
+    } 
+    h3 span { font-size:16px; }
+    .alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.success {
+  padding: 20px;
+  background-color: #3cf436;
+  color: white;
+}
+
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+    </style> 
+
+</head>
+<body>
+    <h1>Number guessing game</h1> 
+  
+<p>We have selected a random number between 1 and 100.  
+   See if you can guess it in 10 turns or fewer. We'll 
+   tell you if your guess was too high or too low.</p> 
+  
+<div class="form"> 
+    <label for="guessField">Enter a guess: </label> 
+    <input type = "text" id = "guessField" class = "guessField"> 
+    <input type = "submit" value = "Submit guess" 
+           class = "guessSubmit" id = "submitguess"> 
+</div> 
+<br>
+<div class="container">
+    <h3>Previous guesses: 
+        <span id='num-list'></span>
+    </h3>
+</div>
+
+<div class="container" id="alert">
+</div>
+<br>
+<div class="form" id="restart-game">
+</div>
+<script src="app.js"></script>
+</body>
+</html>
